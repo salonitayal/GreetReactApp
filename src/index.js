@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';                 // Its required so that we can use JSX(HTML) tags in Js
+import ReactDOM from 'react-dom';         // To manipulate html tags we need the react-dom
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+// const fname = "Saloni";
+// const lname = "Tayal";
+// const link = "#";
+// ReactDOM.render(
+//   <>
+//   <h1 contentEditable="true" className="heading">{`Hello ${fname} ${lname}`}</h1>
+//   <p>Welcome To React</p>
+//   <img src={link}/>
+//   <img src={link}/>
+//   <a href="X" target="_blank">
+//     <img src={link}/>
+//   </a>
+//   </>,
+//   document.getElementById("root"));
+
+
+ReactDOM.render(<App />,
   document.getElementById('root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
